@@ -327,16 +327,16 @@ for case in cases:
     tlog[:] = 5.2+2.44*log(t[:]);
 
     axes5.scatter(yp1[markers1], up1[markers1], color='r', marker='^', facecolors='white', linewidth='1')
-#    axes5.scatter(yp2[markers2], up2[markers2], color='k', marker='^', facecolors='white', linewidth='1')
+    #axes5.scatter(yp2[markers2], up2[markers2], color='k', marker='^', facecolors='white', linewidth='1')
 
     axes5.semilogx(Y[:]/lv[iplot],uvd[iplot,:], linestyle = linestyle[c], color = cor[c]);
-#    axes5.semilogx(ystar[iplot,:],ustar[iplot,:]+5., linestyle = linestyle[c], color = cor[c]);
+    #axes5.semilogx(ystar[iplot,:],ustar[iplot,:]+5., linestyle = linestyle[c], color = cor[c]);
 
     axes5.semilogx(tlin, tlin, 'k:')
     axes5.semilogx(t[10:-1], tlog[10:-1], 'k:')
 
-#    axes5.semilogx(tlin, tlin+5., 'k:')
-#    axes5.semilogx(t[10:-1], tlog[10:-1]+5., 'k:')
+    #axes5.semilogx(tlin, tlin+5., 'k:')
+    #axes5.semilogx(t[10:-1], tlog[10:-1]+5., 'k:')
 
     axes5.set_xlabel( r"$y^+ , \; y_{TL}^+$");
     axes5.set_ylabel(r"$u^+, \; u^+_{TL}$");
